@@ -11,11 +11,18 @@
 
 
 const express  = require("express")
+const bodyParser = require("body-parser")
 const app = express()
 const port = 3000
 
+app.use(bodyParser.json())
+
 app.get("/hello",function(req,res){
-    res.send("Hi my name is Pooja")
+    res.send("hello there")
+})
+app.post("/",function(req,res){
+    console.log(req.body)
+    // res.send("Hi my name is Pooja")
 })
 
 app.listen(port)
