@@ -7,3 +7,15 @@
 
 //  - HH:MM::SS AM/PM (Eg 01:45:23 PM)
 
+const date =  new Date();
+// let hours = date.getHours() % 12;
+console.log(date.getDate())
+
+
+// if(hours == 0){
+//     hours = 12;
+//     }else if(hours > 12){
+//         hours -= 12;
+//         }
+//         let minutes = "0" + date.getMinutes();
+//         let seconds = "0" + date.getSeconds();  
