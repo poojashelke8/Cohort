@@ -14,3 +14,9 @@ setTimeout(() => {
     console.log("Interval stopped after 5 seconds");
   }, 5000);
 
+function tempfun(){
+    console.log("inside temp fun")
+}
+
+setTimeout(tempfun,1000)
+console.log("using setTimeout")
